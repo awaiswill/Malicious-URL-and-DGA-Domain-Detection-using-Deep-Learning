@@ -127,6 +127,8 @@ with tf.device("/GPU:0"):
     # Experimental result
     Evaluator.calculate_measure(best_model, x_test, y_test)
 
+    
+    
     # Save confusion matrix
     Evaluator.plot_confusion_matrix(model_name, y_test, y_pred, title='Confusion matrix', normalize=True)
 
